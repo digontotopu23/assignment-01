@@ -31,4 +31,38 @@
     color: #000000;
 }
 
-.nav-menu a:hover {color: #2f855a;} 
+.nav-menu a:hover {color: #2f855a; 
+}
+
+
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(../assets/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.banner h1{
+    font-size: 42px;
+    margin: 20px 0;
+}
+.banner p{
+    max-width: 750px;
+    margin: auto;
+}
+.badge{
+   background: #30B868;
+   padding: 8px 12px;
+   border-radius: 1000px;
+   font-size: 14px;
+   font-style: medium;
+   letter-spacing: 0%;
+}
+.banner-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
