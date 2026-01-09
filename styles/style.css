@@ -23,12 +23,13 @@ h1 span {
 .subtitle{
     color: #64748b;
   margin: 10px 0 40px;
+  font-size: 16px;
 }
 .btn {
   text-decoration: none;
-  padding: 12px 22px;
+  padding: 10px 22px;
   border-radius: 6px;
-  font-weight: 500;
+  font-weight: 600;
   display: inline-block;
   transition: all 0.3s ease;
 }
@@ -45,42 +46,51 @@ h1 span {
 
 .secondary {
   border: 1px solid #cbd5e1;
-  color: #0f172a;
+  color: #ffffff;
 }
 
 .secondary:hover {
   background: #f1f5f9;
+  padding: 15px 0;
+
 }
 
 .navbar{
     background: #FFFFFF;
-    border-bottom: 1px solid #e5e7eb;
-    padding: 16px 120px;
+    border-bottom: 1px solid #f0f0f0;
+        padding: 15px 0;
+   width: 100%;
 }
 .navbar .nav-wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 .navbar .nav-wrapper .logo{
      font-weight: bold; 
     height: 32px;
 }
 .logo {
-  font-weight: bold;
-  font-size: 20px;
+  height: 60px;
+  display: block;
+   width: auto;
 }
 .nav-menu{
     display: flex;
-    gap: 31px;
+    gap: 32px;
 }
 .nav-menu a{
     text-decoration: none;
     color: #000000;
+     font-weight: 500; 
+    font-size: 16px;
 }
  
 
-.nav-menu a:hover {color: #2f855a; 
+.nav-menu a:hover {color:  #48a06b; 
 }
 
 
@@ -98,7 +108,7 @@ h1 span {
 }
 .banner h1{
     font-size: 42px;
-    margin: 20px 0;
+    margin: 20px ;
 }
 .banner p{
      max-width: 750px; 
@@ -112,10 +122,8 @@ h1 span {
    border-radius: 20px;
    font-size: 14px;
    font-weight: 500;
-   letter-spacing: 0%;
 }
 .banner-buttons {
-  margin-top: 30px;
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -146,16 +154,16 @@ h1 span {
   transform: translateY(-5px);
 }
  
-}
  .notes .card-row .note-card .icon{
-    width: 32px;
-    height: 32px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: 0 auto 20 ;
     margin-bottom: 21px;
-    font-size: 24px;
+     font-size: 24px; 
     color: #FFFFFF;
  }
 .note-card .vector{ background: #F95555;}
@@ -166,73 +174,137 @@ h1 span {
 
 .second-brain {
   padding: 80px 0;
-  background: #f8fafc;
 }
 
 .brain-wrapper {
   display: flex;
   align-items: center;
   gap: 50px;
+  position: relative;
 }
 
 .brain-image img {
-  width: 100%;
+   flex: 1;
+  padding-right: 50px;
   border-radius: 12px;
+  background-color: #ffffff;
 }
 
 .brain-content ul {
-  margin-top: 15px;
-  padding-left: 20px;
-}
 
-.brain-content li {
-  margin-bottom: 8px;
+  flex: 1;
+  padding-left: 50px;
 }
-
+.brain-content{
+    margin-bottom: 30px;
+    line-height: 1.6;
+    background-color: white;
+}
 .early-access {
   padding: 80px 0;
   text-align: center;
+  background-color: #F7F6F2;
+  margin: 120px;
+}
+.early-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  background: #30B868;
+  color: #ffffff;
+   
 }
 
+
+.early-btn:hover {
+  background: #276749;
+}
+#arrow {
+  width: 16px;
+  height: auto;
+}
+
+.early-btn:hover #arrow {
+  transform: translateX(4px);
+}
+
+.brain-content .brain-text{
+    list-style-type: none;
+    border-left: 50px;
+    list-style: none; 
+    padding-left: 0;
+    margin-top: 8px;
+}
+.banner-content .brain-details{
+     border-top: 16px;
+     border-bottom: 40px;
+     line-height: 1.6;
+     padding-left: 0;
+    list-style: none;
+    font-size: 16px;
+
+}
 .simple-text {
   margin-bottom: 25px;
   color: #334155;
 }
-
+#arrow{
+    vertical-align: middle;
+}
 .end-text {
   margin-top: 10px;
   font-size: 14px;
   color: #64748b;
 }
-
-.footer {
-  background: #0f172a;
+ 
+ 
+ .footer {
+  background-color: #0f172a;
   color: #ffffff;
-  padding: 30px 0;
+  padding: 60px 0 30px;
 }
 
 .footer-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
- .social-links a {
-  margin-left: 12px;
+.footer-logo img {
+  max-height: 50px;
+}
+
+.footer-social {
+   text-align: right;
+}
+
+.footer-social h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+.social-links a {
   text-decoration: none;
   color: #ffffff;
   font-size: 18px;
   transition: color 0.3s;
 }
 
-.footer hr {
-  margin: 20px 0;
-  border: none;
-  border-top: 1px solid #334155;
+.social-links a:hover {
+  color: #30B868;
 }
 
 .footer .copyright {
   text-align: center;
+  margin-top: 30px;
   font-size: 14px;
   color: #cbd5e1;
 }
