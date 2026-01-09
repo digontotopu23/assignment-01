@@ -3,14 +3,53 @@
     box-sizing: border-box;
 
 }
-
+body {
+  color: #0f172a;
+  background: #ffffff;
+  line-height: 1.6;
+}
 .font-inter{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
 .container{
+    width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+h1 span {
+  color: #2f855a;
+}
+.subtitle{
+    color: #64748b;
+  margin: 10px 0 40px;
+}
+.btn {
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-weight: 500;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.primary {
+  background: #30B868; 
+  color: #ffffff;      
+  border: none;
+}
+
+.primary:hover {
+  background: #276749;
+  color: #ffffff;
+}
+
+.secondary {
+  border: 1px solid #cbd5e1;
+  color: #0f172a;
+}
+
+.secondary:hover {
+  background: #f1f5f9;
 }
 
 .navbar{
@@ -24,8 +63,12 @@
     justify-content: space-between;
 }
 .navbar .nav-wrapper .logo{
-    /* font-weight: bold; */
+     font-weight: bold; 
     height: 32px;
+}
+.logo {
+  font-weight: bold;
+  font-size: 20px;
 }
 .nav-menu{
     display: flex;
@@ -34,43 +77,40 @@
 .nav-menu a{
     text-decoration: none;
     color: #000000;
-    font-weight: 500;
 }
+ 
 
 .nav-menu a:hover {color: #2f855a; 
 }
 
 
 .banner{
-     background-image:   linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-  url(../assets/hero-bg.png)
-  background-size: cover;
+     background-image:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),url(../assets/hero-bg.png);
     background-size: cover;
     background-position: center;
     padding: 120px 20px;
     text-align: center;
     color: #FFFFFF;
 }
-.banner .banner-content{
-  max-width: 800px;
-  margin: 0 auto;
+.banner .banner-content{ 
+  max-width: 800px; 
+   margin: 0 auto; 
 }
 .banner h1{
     font-size: 42px;
     margin: 20px 0;
 }
 .banner p{
-    /* max-width: 750px; */
-    /* margin: auto; */
+     max-width: 750px; 
+     margin: auto; 
     font-size: 16px;
   line-height: 1.6;
 }
 .badge{
    background: #30B868;
    padding: 8px 12px;
-   border-radius: 1000px;
+   border-radius: 20px;
    font-size: 14px;
-   font-style: medium;
    font-weight: 500;
    letter-spacing: 0%;
 }
@@ -85,38 +125,27 @@
      text-align: center; 
      
 }
-.notes h2{
-  font-size: 32px;
-  margin-bottom: 12px;
-}
-
-.subtitle{
-  color: #6b7280;
-  max-width: 700px;
-  margin: 0 auto 60px;
-}
+  
+ 
 .notes .card-row{
     display: flex;
      gap: 24px; 
     justify-content: space-between;
+    flex-wrap: wrap;
 }
  .notes .card-row .note-card{
     background: #FFFFFF;
     padding: 24px;
     border-radius: 8px;
     width: 21%;
-    max-width: 1600px;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+     transition: transform 0.3s;
 }
-.note-card h3{
-  margin: 12px 0;
-  font-size: 18px;
+ 
+.note-card:hover {
+  transform: translateY(-5px);
 }
-
-.note-card p{
-  color: #6b7280;
-  font-size: 14px;
-  line-height: 1.6;
+ 
 }
  .notes .card-row .note-card .icon{
     width: 32px;
@@ -133,3 +162,77 @@
 .note-card .bookmark{background: #F95555;}
 .note-card .brain{background: #F95555;}
 .note-card .info{background: #F95555;}
+
+
+.second-brain {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.brain-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.brain-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.brain-content ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.brain-content li {
+  margin-bottom: 8px;
+}
+
+.early-access {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.simple-text {
+  margin-bottom: 25px;
+  color: #334155;
+}
+
+.end-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.footer {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 30px 0;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ .social-links a {
+  margin-left: 12px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.footer hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #334155;
+}
+
+.footer .copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #cbd5e1;
+}
